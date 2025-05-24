@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+input[type="text"], button {
+    padding: 8px;
+    margin: 5px;
+}
+#plantList {
+    list-style: none;
+    padding: 0;
+}
+#plantList li {
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.plantDetail {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.loading {
+    text-align: center;
+    font-style: italic;
+}
+
+div2{
+display: flex;
+width: 100%;
+height: 10vh;
+margin: auto;
+max-width: 1000px;
+justify-content: space-between;
+text-align: center;
+background: transparent;
+}
+li {
+padding: 1rem 2rem 1.15rem;
+text-transform: uppercase;
+cursor: pointer;
+color: #205d3e;
+min-width: 80px;
+margin: auto;
+
+}
+
+li:hover {
+background-image: url('https://www.clker.com/cliparts/H/1/y/f/k/2/green-rect-button-hi.png');
+background-size: 100% 100%;
+color: #38674c;
+animation: spring 300ms ease-out;
+font-weight: bold;
+}
+button:active {
+transform: translateY(4px);
+}
+
+@keyframes spring {
+15% {
+-webkit-transform-origin: center center;
+-webkit-transform: scale(1.2, 1.1);
+}
+40% {
+-webkit-transform-origin: center center;
+-webkit-transform: scale(0.95, 0.95);
+}
+75% {
+-webkit-transform-origin: center center;
+-webkit-transform: scale(1.05, 1);
+}
+100% {
+-webkit-transform-origin: center center;
+-webkit-transform: scale(1, 1);
+}
+}
+
+body {
+    background: linear-gradient(-45deg, #baffd3, #8c9df0, #a2e2f7, #62cfb4);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+h1 {
+    font-size:50px;
+}
+body,html{margin:50;padding:0;height:60%;}
+body{
+
+  font-family: 'Cabin Condensed', sans-serif;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+svg{font-weight:bold;max-width:600px;height:100%;}
+
+.style h2 {
+text-align: center;
+    font-size:30px; font-weight:300; color:#4f7f62; letter-spacing:1px;
+    text-transform: uppercase;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.style h2:after,.style h2:before {
+    content: " ";
+    display: block;
+    border-bottom: 5px solid #008b3f;
+    border-top: 5px solid #008b3f;
+    height: 5px;
+}
