@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Light gray background */
+    font-family: 'Cabin Condensed', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #0056b3; /* Darken the button on hover */
+}
+
+.fact-display {
+    margin-top: 20px;
+    font-size: 1.5em;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 15px;
+    background: white;
+    display: inline-block;
+    max-width: 80%;
+}
+
+h1 {
+    font-size: 50px;
+}
