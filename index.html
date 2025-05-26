@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+
+<p>
+    
+<div class="wrapper">
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+    </div>
+    <div class="container">
+        
+<svg viewbox="0 0 100 20">
+  <defs>
+    <linearGradient id="gradient">
+      <stop color="#000"/>
+    </linearGradient>
+    <pattern id="wave" x="0" y="-0.5" width="100%" height="100%" patternUnits="userSpaceOnUse">
+      <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="white"> 
+        <animateTransform
+            attributeName="transform"
+            begin="0s"
+            dur="1.5s"
+            type="translate"
+            from="0,0"
+            to="40,0"
+            repeatCount="indefinite" />
+      </path>
+    </pattern>
+  </defs>
+  <text text-anchor="middle" x="50" y="15" font-size="17" fill="purple" fill-opacity="10">ANIME LIST</text>
+  <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="1">ANIME LIST</text>
+</svg>
+
+        <div class="filters">
+            <select id="genreFilter">
+                <option value="">Select Genre</option>
+                <option value="Action">Action</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Horror">Horror</option>
+                <option value="Romance">Romance</option>
+                <option value="Sci-fi">Sci-fi</option>
+                <!-- Add more genres as necessary -->
+            </select>
+
+            <select id="typeFilter">
+                <option value="">Select Type</option>
+                <option value="TV">TV</option>
+                <option value="Movie">Movie</option>
+                <option value="OVA">OVA</option>
+                <option value="Special">Special</option>
+            </select>
+
+            <select id="statusFilter">
+                <option value="">Select Status</option>
+                <option value="Ongoing">Ongoing</option>
+                <option value="Completed">Completed</option>
+                <option value="Upcoming">Upcoming</option>
+            </select>
+        </div>
+
+        <div class="filter" id="filterButton">
+  <button class="button">SEARCH</button>
+  <div class="drip-1"></div>
+  <div class="drip-2"></div>
+  <div class="drip-3"></div>
+</div>
+       
+       
+        <div id="animeList" class="anime-list"></div>
+
+        
+    </div>
+
+    <script src="script.js"></script>
+</p>
+<body>
+</body>
+</html>
